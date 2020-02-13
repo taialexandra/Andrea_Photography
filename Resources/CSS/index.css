@@ -1,0 +1,32 @@
+*{
+    font-family: 'Sorts Mill Goudy', serif;
+}
+
+.hero-image {
+    background-image: url("../Images/header_one.jpg");
+    background-color: #acb7ae;
+    height: 1700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 0 80px;
+    font-style: italic;
+}
+
+.sectionII-quote {
+    color: #bd8c7d;
+}
+
+h1{
+    font-size: 18px;
+    color: #d1bfa7;
+}
+p{
+    font-size: 12px;
+    font-style: italic;
+    color: purple;
+}
