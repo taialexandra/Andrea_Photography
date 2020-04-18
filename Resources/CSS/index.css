@@ -4,30 +4,36 @@
     padding: 0; /* setting margin: 0 and padding: 0 overrides the user agent stylesheet's settings */
 }
 
+
 #maincontent{
     max-width: 1610px;
     margin-left: auto;
     margin-right: auto; /* margin-right, margin-left, and max-width are specs taken from Nicole Marie's website */
 }
 
-/* Section I. Hero-image and navbar */
-
-.hero-image {
-    background-image: url("../Images/header_one.jpg");
-    background-color: #acb7ae;
-    height: 852px;
-    background-position: center  top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 700px;
-    width: auto;
-    z-index: 1;
+.section_button{
+    color: inherit;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: .7em;
+    border: 2px solid #000;
+    padding: 7px;
 }
+
+a:hover {
+    cursor: pointer;
+}
+
+/* Section I. Hero-image and navbar */
 
 .navbar li {
     display: inline-block;
-    padding: 80px 80px;
+    padding: 20px 80px;
     font-style: italic;
+}
+.navbar a:hover{
+    color: #CFB593;
 }
 
 /* Section II. Centered quote with fun designs on the sides */
