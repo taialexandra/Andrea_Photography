@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=(device-width), initial-scale=1.0, shrink-to-fit=no">
@@ -14,22 +14,22 @@
     <link href="https://fonts.googleapis.com/css?family=Lora|Merriweather|Montserrat|PT+Serif|Playfair+Display|Sorts+Mill+Goudy&display=swap" rel="stylesheet">
     
     <title>Andrea Reis Photography</title>
-</head>
+  </head>
 <body>
-<main>
+  <main>
     <!--Section I: Header-->
     <div>
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-          <nav class="navbar">
-            <ul>
-                <li><a >About Me</a></li>
-                <li><a >Portfolio</a></li>
-                <li><a >Info</a></li>
-                <li><a >Logo</a></li>
-                <li><a >Blog</a></li>
-                <li><a >Contact</a></li>
-            </ul>
-        </nav>
+      <nav class="navbar">
+        <ul>
+            <li><a >About Me</a></li>
+            <li><a >Portfolio</a></li>
+            <li><a >Info</a></li>
+            <li><a >Logo</a></li>
+            <li><a >Blog</a></li>
+            <li><a >Contact</a></li>
+        </ul>
+      </nav>
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">  
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="./Resources/Images/header_one.jpg" class="d-block w-100 active" alt="couple on hill at sunset">
@@ -45,17 +45,17 @@
           </div>
           <div class="carousel-item">
               <img src="./Resources/Images/Joyce2019-2.jpg" class="d-block w-100" alt="man holding his partner in field of flowers">
-            </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
           </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
     </div>
 
     <!--Section II: Quote-->
@@ -65,21 +65,25 @@
     </div>
 
     <!--Section III: Portfolio-->
-    <div id="containerIII">
-        <img class="sectionIII_image" src="./Resources/Images/lake_one.jpg" alt="couple by lake" width="100px" height="100px"/>
-    <div class="sectionIII_text">
-        <h1>CAPTURE THE FEELING</h1>
-        <p>Love is magic. Love is indescribable. It's your lover's heartbeat and your best friend's laugh. It's what gets me out of bed in the morning. See some of the love I've had the honor to work with.</p>
-        <a class="section_button">Details</a>
-    </div><!-- closing div for class sectionIII_text-->
+    <div class="containerIII">
+        <div class="image_container_I">
+          <img class="sectionIII_image" src="./Resources/Images/lake_one.jpg" alt="couple by lake"/>
+        </div>
+        <div class="sectionIII_text">
+          <h1>CAPTURE THE FEELING</h1>
+          <p>Love is magic. Love is indescribable. It's your lover's heartbeat and your best friend's laugh. It's what gets me out of bed in the morning. See some of the love I've had the honor to work with.</p>
+          <div>
+            <a class="section_button">Details</a>
+          </div>
+        </div><!-- closing div for class sectionIII_text-->
     </div><!-- closing div for id containerIII-->
     
     <!--Section IV: Image Banner-->
-    <div class="sectionIV">
-        <img src="./Resources/Images/banner_one.jpg" alt="girlfriend being carried smiling over husbands shoulder" width="300px" height="300px"/>
-        <img src="./Resources/Images/banner_two.jpg" alt="embracing couple gazing into each others eyes" width="300px" height="300px"/>
-        <img src="./Resources/Images/banner_three.jpg" alt="couple smiling outside in winter" width="300px" height="300px"/>
-        <img src="./Resources/Images/banner_four.jpg" alt="man holding his partner in field of flowers" width="300px" height="300px"/>
+    <div class="sectionIV_container_images">
+        <img src="./Resources/Images/banner_one.jpg" alt="girlfriend being carried smiling over husbands shoulder" />
+        <img src="./Resources/Images/banner_two.jpg" alt="embracing couple gazing into each others eyes" />
+        <img src="./Resources/Images/banner_three.jpg" alt="couple smiling outside in winter" />
+        <img src="./Resources/Images/banner_four.jpg" alt="man holding his partner in field of flowers"/>
     </div>
 
     <!--Section V: Unknown White Space-->
@@ -98,10 +102,10 @@
         <p>Follow my adventures: <a href="https://www.instagram.com/andreareisphotography/" target="_blank" >Instagram</a></p>
     </div>
 
-</main>
+  </main>
 
-<!--Section VIII: Footer-->
-<footer></footer>
+  <!--Section VIII: Footer-->
+  <footer></footer>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
