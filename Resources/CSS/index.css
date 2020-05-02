@@ -11,6 +11,15 @@
     margin-right: auto; /* margin-right, margin-left, and max-width are specs taken from Nicole Marie's website */
 }
 
+a {
+    color: black;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
 .section_button{
     color: inherit;
     font-family: sans-serif;
@@ -21,14 +30,23 @@
     padding: 7px;
 }
 
-a:hover {
-    cursor: pointer;
-}
+.section_button:active {
+    background: #ffffff;
+  -webkit-box-shadow: inset 0px 0px 5px #CFB593;
+     -moz-box-shadow: inset 0px 0px 5px #CFB593;
+          box-shadow: inset 0px 0px 5px #CFB593;
+   outline: none;
+  }
 
 /* Section I. Navbar and hero-image */
 
 .navbar {
     width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    opacity: 0.7;
+    background-color: white;
 }
 
 .navbar ul {
@@ -37,28 +55,54 @@ a:hover {
     text-align: center;
     width: 100%;
     font-style: italic;
+    list-style: none;
+    margin-top: 5px;
 }
 .navbar a:hover{
     color: #CFB593;
+    text-decoration: none;
 }
 
 /* Section II. Centered quote with fun designs on the sides */
 
 .sectionII{
     text-align: center;
-    background-color: #CFB593;
+    background-color: rgb(243, 222, 196);
     padding-top: 53px;
     padding-bottom: 53px;
 }
 
 #sectionII-quote{
-    font-size: 40px;
+    font-size: 50px;
     font-style: italic;
+    font-family: Cormorant Garamond;
+    font-weight: 300;
+    letter-spacing: 0em;
+    line-height: 1.45em;
+    text-transform: lowercase;
 }
 
-#sectionII-subheader{
-    font-size: 13px;
-    font-family: 'Montserrat', sans-serif;
+.quote_subheader{
+    display: inline-block;
+}
+
+h8{
+    font-size: 18px;
+    font-family: Cormorant Garamond;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: .01em;
+    line-height: 1.6em;
+    text-transform: none;
+}
+
+h9{
+    font-family: "proxima nova",sans-serif;
+    color: #000;
+    font-weight: 200;
+    font-size: 12px;
+    letter-spacing: .7em;
+    text-transform: uppercase;
 }
 
 /* Section III. Pricing info */
@@ -67,11 +111,12 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 50px 48px;
 }
 
 .image_container_I {
     display: block;
-    width: 25%;
+    width: 30%;
     height: auto;
 }
 
@@ -88,11 +133,21 @@ a:hover {
     margin-left: 1em;
 }
 
-h1{
+h3{
     font-size: 24px;
-    color: #d1bfa7;
     line-height: 40px;
     position: relative;
+    font-family: "proxima nova",sans-serif;
+    color: #000;
+    letter-spacing: .4em;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-image: linear-gradient(#d1bfa7,#d1bfa7);
+    background-position: 0 70%;
+    background-size: 100% 5px;
+    background-repeat: no-repeat;
+    padding-bottom: 0px;
+    text-decoration: none;
 }
 
 p{
@@ -118,10 +173,24 @@ p{
 /* Section V. Bar of whitespace */
 .sectionV{
     background-color: #acb7ae;
+    height: 70px;
 }
 
 /* Section VI. About Me */
+.sectionVI_content_container {
+    display: flex;
+}
+.sectionVI_text {
+    align-content: center;
+    margin-left: 1.5rem;
+}
 
 /* Section VII. Mini banner of images and connect details */
+.instagram_handle{
+    text-align: right;
+}
 
 /* Section VII. Footer */
+footer{
+    background-color: #CFB593;
+}

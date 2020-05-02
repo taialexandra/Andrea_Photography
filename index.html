@@ -21,12 +21,12 @@
     <div>
       <nav class="navbar">
         <ul>
-            <li><a >About Me</a></li>
-            <li><a >Portfolio</a></li>
-            <li><a >Info</a></li>
-            <li><a >Logo</a></li>
-            <li><a >Blog</a></li>
-            <li><a >Contact</a></li>
+            <li><a href="pages/about_me.html">About Me</a></li>
+            <li><a href="pages/portfolio.html">Portfolio</a></li>
+            <li><a href="pages/info.html">Info</a></li>
+            <li><a href="#">Logo</a></li>
+            <li><a href="pages/blog.html">Blog</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
         </ul>
       </nav>
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">  
@@ -61,7 +61,11 @@
     <!--Section II: Quote-->
     <div class="sectionII">
         <blockquote id="sectionII-quote">Obsessed with capturing love</blockquote>
-        <p id="sectionII-subheader">Est. | MINNESOTA | 2019</p>
+        <div class="quote_subheader">
+          <h8>Est.</h8>
+          <h9>| MINNESOTA |</h9>
+          <h8>2019</h8>
+        </div>  
     </div>
 
     <!--Section III: Portfolio-->
@@ -70,7 +74,7 @@
           <img class="sectionIII_image" src="./Resources/Images/lake_one.jpg" alt="couple by lake"/>
         </div>
         <div class="sectionIII_text">
-          <h1>CAPTURE THE FEELING</h1>
+          <h3>CAPTURE THE FEELING</h3>
           <p>Love is magic. Love is indescribable. It's your lover's heartbeat and your best friend's laugh. It's what gets me out of bed in the morning. See some of the love I've had the honor to work with.</p>
           <div>
             <a class="section_button">Details</a>
@@ -93,19 +97,47 @@
 
     <!--Section VI: Meet Andrea-->
     <div>
-        <p>About Me: Starbucks chai tea lattes are my love language</p>
-        <a class="section_button">Learn more about me</a>
+      <div class="sectionVI_content_container">
+        <div>
+          <img src="Resources/images/about_me.jpg" alt="Andrea and her husband and dog">
+        </div>
+        <div class="sectionVI_text">
+          <p>About Me: Starbucks chai tea lattes are my love language</p>
+          <div>
+            <a class="section_button">Learn more about me</a>
+          </div>
+        </div> 
+
+      </div> 
     </div>
 
     <!--Section VII: Connect-->
-    <div>
-        <p>Follow my adventures: <a href="https://www.instagram.com/andreareisphotography/" target="_blank" >Instagram</a></p>
+    <div class="sectionVII_container">
+      <div class="sectionVII_content_container">
+        <div> <!--div for line + insta link-->
+          <div class="outer_line_container">
+            <div class="inner_line_container">
+              <hr>
+            </div>
+          </div>
+          <div>
+            <text class="instagram_handle">Follow my adventures: <a href="https://www.instagram.com/andreareisphotography/" target="_blank" >@andreareisphotography</a></text>
+          </div> <!--closes div with text "Follow my adventures" and anchor to insta account-->
+        </div> <!--closes div for line + insta link-->
+        <div>
+
+        </div>
+      </div> <!--closes div for content container, ie line + insta + image banner-->
     </div>
 
   </main>
 
   <!--Section VIII: Footer-->
-  <footer></footer>
+  <footer>
+    <div class="footer_logo">
+      <img> <!--logo-->
+    </div>
+  </footer>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
