@@ -323,3 +323,8 @@ footer{
     width: 250px;
     margin: 3em 0;
 }
+
+.footer_columns {
+    display: flex;
+    justify-content: center;
+}
