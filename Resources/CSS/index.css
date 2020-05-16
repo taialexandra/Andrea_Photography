@@ -45,31 +45,67 @@ a:hover {
     position: fixed;
     top: 0;
     z-index: 100;
-    opacity: 0.7;
+    opacity: 0.6;
     background-color: white;
 }
 
 .navbar ul {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     text-align: center;
     width: 100%;
     font-style: italic;
     list-style: none;
-    margin-top: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
 }
 .navbar a:hover{
     color: #CFB593;
     text-decoration: none;
 }
+  
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}  
 
 /* Section II. Centered quote with fun designs on the sides */
 
 .sectionII{
     text-align: center;
-    background-color: rgb(243, 222, 196);
-    padding-top: 53px;
-    padding-bottom: 53px;
+    background-color: rgb(245, 222, 179);
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 #sectionII-quote{
@@ -111,7 +147,7 @@ h9{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 48px;
+    padding: 70px 48px;
 }
 
 .image_container_I {
@@ -158,39 +194,132 @@ p{
 /* Section IV. Banner of images */
 
 .sectionIV_container_images{
-    display: inline-block;
+    display: flex;
     width: 100%;
     height: auto;
     margin: 0;
     padding: 0; /* how do I get rid of the white space between photos? */
+    justify-content: center;
 }
 
 .sectionIV_container_images img {
-    width: 24.5%;
+    width: 25%;
     height: auto;
 }
 
 /* Section V. Bar of whitespace */
-.sectionV{
-    background-color: #acb7ae;
-    height: 70px;
+.floral_icon_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.floral_icon {
+    width: 350px; /* Confused as to why this didn't make the image width 350px */
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 1em;
+}
+
+.love_quote_plus_memories_text {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.memories_text {
+    width: 15%;
+    margin-left: 2em;
+    padding: 0%;
+}
+
+.memories_text p{
+    font-size: 30px;
+    line-height: 1.4em;
+    padding: 0;
 }
 
 /* Section VI. About Me */
 .sectionVI_content_container {
     display: flex;
+    background-color: wheat;
 }
 .sectionVI_text {
     align-content: center;
     margin-left: 1.5rem;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-/* Section VII. Mini banner of images and connect details */
+/* Section VII. Links to Instagram */
+.sectionVII_container {
+    display: flex;
+    justify-content:center;
+}
+
+.sectionVII_content_container {
+    width: 65%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.line_plus_insta_link {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.line_container{
+    width: 75%;
+    display: inline-block;
+    text-align: left;
+}
+
 .instagram_handle{
+    float: right;
+    width: 20%;
+    overflow: show;
+    padding-right: 0;
+    display: block;
     text-align: right;
+}
+
+.instagram_handle a:hover {
+    color: #CFB593;
+}
+
+.insta_image_container{
+    margin-top: 1rem;
+    margin-bottom: 5rem
+}
+
+.insta_image_wrapper {
+    display: inline-block;
+}
+
+.insta_image {
+    width: 141px;
+    height: 141px;
 }
 
 /* Section VII. Footer */
 footer{
-    background-color: #CFB593;
+    background-color: wheat;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.footer_logo_container {
+    display: flex;
+    justify-content: center;
+}
+
+.footer_logo {
+    width: 250px;
+    margin: 3em 0;
 }

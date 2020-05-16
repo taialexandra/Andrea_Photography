@@ -18,17 +18,25 @@
 <body>
   <main>
     <!--Section I: Header-->
-    <div>
+    <section>
       <nav class="navbar">
         <ul>
-            <li><a href="pages/about_me.html">About Me</a></li>
-            <li><a href="pages/portfolio.html">Portfolio</a></li>
+            <li class="dropdown"><a href="pages/portfolio.html">Portfolio</a>
+              <div class="dropdown-content"> <!--Hover dropdown navigation-->
+                <a href="#">Couples</a>
+                <a href="#">Families</a>
+                <a href="#">Maternity</a>
+                <a href="#">Engagements</a>
+                <a href="#">Headshots</a>
+              </div> <!--End hover dropdown navigation-->
+            </li>
             <li><a href="pages/info.html">Info</a></li>
-            <li><a href="#">Logo</a></li>
+            <li><a href="#"><img src="./Resources/icons/ar_logo.png" alt="andrea reis photography logo" width="250px"></a></li>
             <li><a href="pages/blog.html">Blog</a></li>
             <li><a href="pages/contact.html">Contact</a></li>
         </ul>
       </nav>
+
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">  
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -56,20 +64,20 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-    </div>
+    </section>
 
     <!--Section II: Quote-->
-    <div class="sectionII">
+    <section class="sectionII">
         <blockquote id="sectionII-quote">Obsessed with capturing love</blockquote>
         <div class="quote_subheader">
           <h8>Est.</h8>
           <h9>| MINNESOTA |</h9>
           <h8>2019</h8>
         </div>  
-    </div>
+    </section>
 
     <!--Section III: Portfolio-->
-    <div class="containerIII">
+    <section class="containerIII">
         <div class="image_container_I">
           <img class="sectionIII_image" src="./Resources/Images/lake_one.jpg" alt="couple by lake"/>
         </div>
@@ -80,63 +88,111 @@
             <a class="section_button">Details</a>
           </div>
         </div><!-- closing div for class sectionIII_text-->
-    </div><!-- closing div for id containerIII-->
+      </section><!-- closing div for id containerIII-->
     
     <!--Section IV: Image Banner-->
-    <div class="sectionIV_container_images">
+    <section class="sectionIV_container_images">
+      <!--images should be wrapped in <div> it tells other elements to move around it. Images are nature inline elements-->
         <img src="./Resources/Images/banner_one.jpg" alt="girlfriend being carried smiling over husbands shoulder" />
         <img src="./Resources/Images/banner_two.jpg" alt="embracing couple gazing into each others eyes" />
         <img src="./Resources/Images/banner_three.jpg" alt="couple smiling outside in winter" />
         <img src="./Resources/Images/banner_four.jpg" alt="man holding his partner in field of flowers"/>
-    </div>
+    </section>
 
-    <!--Section V: Unknown White Space-->
-    <div class="sectionV">
-
-    </div>
+    <!--Section V: Decoration-->
+    <section class="sectionV">
+      <div class="floral_icon_container">
+        <div class="floral_icon">
+          <!--without specifying width: 350px in the html image element, ie using .floral_icon class in css, the image does not shrink to 350px. why? please see css-->
+          <img src="./Resources/icons/watercolor-floral-illustration-green-gold-leaf-branches.jpg" alt="watercolor floral illustration of green gold leaf branches" width="350px"/>
+        </div>
+      </div>  <!--closing div for floral_icon_container-->
+      <div class="love_quote_plus_memories_text">
+        <div> <!-- holds pdf of cursive text-->
+          <img src="/Resources/icons/everyday_love_quote_trial_II.png" alt="Cursive script everyday love reminder">
+        </div>
+        <div class="memories_text"> <!-- holds text about memories-->
+          <p>Hold on to the <em>memories</em>, they will hold on to you</p>
+        </div>
+      </div>
+    </section>
 
     <!--Section VI: Meet Andrea-->
-    <div>
+    <section>
       <div class="sectionVI_content_container">
-        <div>
+        <div class="meet_andrea_pic">
           <img src="Resources/images/about_me.jpg" alt="Andrea and her husband and dog">
         </div>
         <div class="sectionVI_text">
-          <p>About Me: Starbucks chai tea lattes are my love language</p>
-          <div>
-            <a class="section_button">Learn more about me</a>
+          <div><!--Div to align content on the y-axis-->
+            <p>About Me: Starbucks chai tea lattes are my love language</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div>
+             <a class="section_button">Learn more about me</a>
+            </div>
           </div>
+          
         </div> 
 
       </div> 
-    </div>
+    </section>
 
     <!--Section VII: Connect-->
-    <div class="sectionVII_container">
+    <section class="sectionVII_container">
       <div class="sectionVII_content_container">
-        <div> <!--div for line + insta link-->
-          <div class="outer_line_container">
-            <div class="inner_line_container">
-              <hr>
-            </div>
+        <div class="line_plus_insta_link"> <!--div for line + insta link-->
+          <div class="line_container">
+              <hr> 
           </div>
-          <div>
-            <text class="instagram_handle">Follow my adventures: <a href="https://www.instagram.com/andreareisphotography/" target="_blank" >@andreareisphotography</a></text>
+          <div class="instagram_handle">
+            <text>Follow my adventures: <a href="https://www.instagram.com/andreareisphotography/" target="_blank" >@andreareisphotography</a></text>
           </div> <!--closes div with text "Follow my adventures" and anchor to insta account-->
         </div> <!--closes div for line + insta link-->
-        <div>
-
+        <div class="insta_image_container">
+          <div class="insta_image_wrapper">
+            <a href="https://www.instagram.com/p/CAESjJbnNMQ/" target="blank">
+              <img src="./Resources/images/instagram/insta1.jpg" class="insta_image">
+            </a>
+          </div>
+          <div class="insta_image_wrapper">
+            <a href="https://www.instagram.com/p/B4vrw0dldZS/" target="blank">
+              <img src="./Resources/images/instagram/insta5.jpg" class="insta_image">
+            </a>
+          </div>
+          <div class="insta_image_wrapper">
+            <a href="https://www.instagram.com/p/B6TEyYNlLyq/" target="blank">
+              <img src="./Resources/images/instagram/insta2.jpg" class="insta_image">
+            </a>
+          </div>
+          <div class="insta_image_wrapper">
+            <a href="https://www.instagram.com/p/B6KK_ggFnYI/" target="blank">
+              <img src="./Resources/images/instagram/insta3.jpg" class="insta_image">
+            </a>
+          </div>
+          <div class="insta_image_wrapper">
+            <a href="https://www.instagram.com/p/B5OaHZTFFN1/" target="blank">
+              <img src="./Resources/images/instagram/insta4.jpg" class="insta_image">
+            </a>
+          </div>
+         
+          <div class="insta_image_wrapper">
+            <a href="https://www.instagram.com/p/B2VEOv4nlvZ/" target="blank">
+              <img src="./Resources/images/instagram/insta6.jpg" class="insta_image">
+            </a>
+          </div>
         </div>
       </div> <!--closes div for content container, ie line + insta + image banner-->
-    </div>
+    </section>
 
   </main>
 
   <!--Section VIII: Footer-->
   <footer>
-    <div class="footer_logo">
-      <img> <!--logo-->
-    </div>
+    <div class="footer_logo_container">
+      <a>
+        <img src="./Resources/icons/ar_wheatbackground_logo.png" alt="logo for andrea reis photography" class="footer_logo"> 
+      </a> 
+    </div> <!--end div for footer logo-->
   </footer>
 
 <!-- Optional JavaScript -->
