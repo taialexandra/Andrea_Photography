@@ -102,14 +102,14 @@
     <!--Section V: Decoration-->
     <section class="sectionV">
       <div class="floral_icon_container">
-        <div class="floral_icon">
+        <div >
           <!--without specifying width: 350px in the html image element, ie using .floral_icon class in css, the image does not shrink to 350px. why? please see css-->
-          <img src="./Resources/icons/watercolor-floral-illustration-green-gold-leaf-branches.jpg" alt="watercolor floral illustration of green gold leaf branches" width="350px"/>
+          <img class="floral_icon" src="./Resources/icons/watercolor-floral-illustration-green-gold-leaf-branches.jpg" alt="watercolor floral illustration of green gold leaf branches"/>
         </div>
       </div>  <!--closing div for floral_icon_container-->
       <div class="love_quote_plus_memories_text">
-        <div> <!-- holds pdf of cursive text-->
-          <img src="./Resources/icons/everyday_love_quote_trial_II.png" alt="Cursive script everyday love reminder">
+        <div class="quoteimage-container"> <!-- holds pdf of cursive text-->
+          <img class="quoteimage" src="./Resources/icons/everyday_love_quote_trial_II.png" alt="Cursive script everyday love reminder">
         </div>
         <div class="memories_text"> <!-- holds text about memories-->
           <p>Hold on to the <em>memories</em>, they will hold on to you</p>
@@ -142,7 +142,7 @@
       <div class="sectionVII_content_container">
         <div class="line_plus_insta_link"> <!--div for line + insta link-->
           <div class="line_container">
-              <hr> 
+              <hr class="instaline"> 
           </div>
           <div class="instagram_handle">
             <text>Follow my adventures: <a href="https://www.instagram.com/andreareisphotography/" target="_blank" >@andreareisphotography</a></text>
@@ -189,37 +189,42 @@
   <!--Section VIII: Footer-->
   <footer>
     <div class="footer_logo_container">
-      <a>
+      <a href="#">
         <img src="./Resources/icons/ar_wheatbackground_logo.png" alt="logo for andrea reis photography" class="footer_logo"> 
       </a> 
     </div> <!--end div for footer logo-->
-    <figure class="footer_columns">
-      <figcaption>Connect--</figcaption>
-        <ul>
-          <li><a href="pages/info.html">Facebook</a></li>
-          <li><a href="pages/about_me.html">Instagram</a></li>
-          <li><a href="pages/blog.html">Pinterest</a></li>
-        </ul>
-    </figure>
-    <figure class="footer_columns">
-      <figcaption>Portfolio</figcaption>
-        <ul>
-          <li><a href="#">Couples</a></li>
-          <li><a>Families</a></li>
-          <li><a>Engagements</a></li>
-          <li><a>Maternity</a></li>
-          <li><a>Headshots</a></li>
-        </ul>
-    </figure>
-    <figure class="footer_columns">
-      <figcaption>Details</figcaption>
-        <ul>
-          <li><a href="pages/info.html">Info</a></li>
-          <li><a href="pages/about_me.html">About Me</a></li>
-          <li><a href="pages/blog.html">Blog</a></li>
-          <li><a href="pages/contact.html">Contact</a></li>
-        </ul>
-    </figure>
+    <div class="footer_columns_container">
+      <figure class="footer_columns">
+        <figcaption>Social Media</figcaption>
+          <ul>
+            <li><a href="https://www.facebook.com/andreareisphoto/" target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com/andreareisphotography/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.pinterest.com/andreacolleen4/couples-photography-board/" target="_blank">Pinterest</a></li>
+          </ul>
+      </figure>
+      <figure class="footer_columns">
+        <figcaption>Portfolio</figcaption>
+          <ul>
+            <li><a href="#">Couples</a></li>
+            <li><a>Families</a></li>
+            <li><a>Engagements</a></li>
+            <li><a>Maternity</a></li>
+            <li><a>Headshots</a></li>
+          </ul>
+      </figure>
+      <figure class="footer_columns">
+        <figcaption>Details</figcaption>
+          <ul>
+            <li><a href="pages/info.html">Info</a></li>
+            <li><a href="pages/about_me.html">About Me</a></li>
+            <li><a href="pages/blog.html">Blog</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+         </ul>
+      </figure>
+    </div>
+    <div class="sitetag">
+      <h6>Site by Zhuo Chong</h6>
+    </div>
   </footer>
 
 <!-- Optional JavaScript -->

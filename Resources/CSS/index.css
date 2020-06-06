@@ -45,27 +45,27 @@ a:hover {
 }
 
 .navbar {
-    display: inline-block;
+    display: block;
     width: 100%;
-    position: fixed;
+    position: absolute;
     top: 0;
+    left: 0;
     z-index: 100;
     opacity: 0.6;
     background-color: white;
 }
 
 .navbar ul {
-    display: inline-block;
+    display: block;
     text-align: center;
-    width: 100%;
     font-style: italic;
     list-style: none;
-    margin-top: 0;
-    margin-bottom: 0;
     padding: 0;
 }
+
 .navbar ul li {
     width: 20%;
+    display: inline-block;
 }
 
 .navbar a:hover{
@@ -85,6 +85,9 @@ a:hover {
 .dropdown-content {
     display: none;
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5px;
     background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -112,7 +115,9 @@ a:hover {
 
 .sectionII{
     text-align: center;
-    background-color: rgb(245, 222, 179);
+    background-image: url("gold-flecs-siding-background.jpg");
+    background-size: 100% auto;
+    background-color:rgb(245, 222, 179);
     padding-top: 70px;
     padding-bottom: 70px;
 }
@@ -216,7 +221,7 @@ p{
     height: auto;
 }
 
-/* Section V. Bar of whitespace */
+/* Section V. Section of floral image, text on memories & love */
 .floral_icon_container {
     width: 100%;
     height: auto;
@@ -225,7 +230,7 @@ p{
 }
 
 .floral_icon {
-    width: 350px; /* Confused as to why this didn't make the image width 350px */
+    width: 350px; 
     height: auto;
     margin-top: 40px;
     margin-bottom: 1em;
@@ -235,18 +240,37 @@ p{
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    width: 100%;
+}
+
+.quoteimage-container {
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.quoteimage {
+    width: 70%;
+    padding: 0;
+    margin: 0 0 40px 0;
+    position: relative;
+    float: right;
 }
 
 .memories_text {
-    width: 15%;
-    margin-left: 2em;
+    width: 50%;
+    margin: 0 0 0 2em;
     padding: 0%;
+    align-content: center;
 }
 
 .memories_text p{
+    width: 30%;
     font-size: 30px;
     line-height: 1.4em;
     padding: 0;
+    margin: 0;
 }
 
 /* Section VI. About Me */
@@ -279,13 +303,17 @@ p{
 .line_plus_insta_link {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .line_container{
     width: 75%;
     display: inline-block;
     text-align: left;
+}
+
+.instaline {
+    color: black; /* This isn't changing anything */
 }
 
 .instagram_handle{
@@ -308,11 +336,28 @@ p{
 
 .insta_image_wrapper {
     display: inline-block;
+    width: calc(100%/6.13);
 }
 
+/* Another way to manipulate the images so that they fit the container:
+.insta_image_wrapper{
+    width: calc(100%/6 -2);
+    margin: 0 5px;
+    
 .insta_image {
-    width: 141px;
-    height: 141px;
+    width: 100%; 
+    height: auto;
+    
+.insta_image_container {
+    display: flex;
+    justify-content: space-between;
+} */
+
+.insta_image {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
 }
 
 /* Section VII. Footer */
@@ -326,14 +371,57 @@ footer{
 .footer_logo_container {
     display: flex;
     justify-content: center;
+    padding: 0;
 }
 
 .footer_logo {
     width: 250px;
-    margin: 3em 0;
+    margin: 2em 0 2em 0;
+}
+
+.footer_columns_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0 0 60 0px;
 }
 
 .footer_columns {
+    display: inline-block;
+}
+
+.footer_columns ul {
+    list-style-type: none;
+}
+
+figcaption {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.footer_columns ul li {
+    line-height: 2em;
+    text-transform: uppercase;
+}
+
+.footer_columns a:hover{
+    color: #CFB593;
+    text-decoration: none;
+}
+
+.sitetag {
+    margin: 70px 0 0 0;
+    padding: 10px;
+    width: 100%;
     display: flex;
     justify-content: center;
+}
+
+h6 {
+   font-family: "proxima nova", sans-serif;
+   text-transform: uppercase;
+   letter-spacing: .3em;
+   font-weight: 100;
+   font-size: 12px; 
 }
